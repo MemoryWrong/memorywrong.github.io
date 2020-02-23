@@ -2,7 +2,7 @@
 # Personal Blog - MemoryWrong
 
 > CLI for creating reusable static page templates for github page blog.
-s
+
 #### Generate to Static Pages
 
 ```bash
