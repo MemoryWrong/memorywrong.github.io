@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Carl Lee Blog</title>
@@ -52,29 +47,86 @@
 							<article class="post featured">
 								<header class="major">
 									<span class="date">Feb 23, 2020</span>
-									<h2>Who am I </h2>	
-									<p>I am Frontend developer in Melbourne, </p>
+									<h2>I am Carl Lee </h2>	
+									<p>Frontend developer in Melbourne, </p>
 									<p>always interested in latest techniques in FE and willing to try & share new stuff.</p>
 									<pre>
 										<code class="language-js">
-let	$me = {
-	name: "CL",
-	job: "front end develop",
-	location: "Melbourne",
-	knowledge: ['Frontend', 'webGL', 'reactJS', 'react-native',
-			 'tensorflow', 'jQuery', 'sass', ...]
-};
+	let	$me = {
+		name: "CL",
+		job: "front end develop",
+		location: "Melbourne",
+		knowledge: ['Frontend', 'webGL', 'reactJS', 'react-native',
+				'tensorflow', 'jQuery', 'sass', ...]
+	};
 
 
-</code>
+									</code>
 									</pre>
 								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions special">
+								<!-- <ul class="actions special">
 									<li><a href="#" class="button large">Full Story</a></li>
-								</ul>
+								</ul> -->
 							</article>
+							<article class="post">
+								<h2>How i setup this blog</h2>
+								<p>To be honest, really don't know which is the best topic for my first github blog post.</p>
+								<p>
+									I think it is a good idea to share how i set up my the github pages. Although there are a lot of tools
+									for creating the blog like using FE lib or CRA or gatsbyJS, my way is quite simple. Check this out :)
+								</p>
+								<p>
+									My purpose is just for creating some static pages to be hosted in the github server. And it should be easy
+									to create new posts, maybe need to upload some screenshots or code snippet & highlights.
+								</p>
+								<p></p>
+								<p></p>
+								<p></p>
+								<ul>
+									<li><h4>
+										Setup the github pages
+									</h4></li>
+									<p>First, you need a <a href="github.com">github</a> account. Then you need to create
+									repo with the name like `{yourGithubName}.github.io`</p>
+									<a href="#" class="image main"><img src="images/github/1.png" alt="" /></a>
+									<p>Then go to the settings of your project, you can select `gh-pages-branch` 
+										as your blog site repo branch.
+									</p>
+									
+									<li><h4>
+										Build your templates
+									</h4></li>
+									<p>
+										Actually, there are a lot of ways of doing this.
+										I am using <a href="https://html5up.net/">HTML5up</a> to generate my site.
+										Why i am using ? Free and easy download, well... just let me get out of those 
+										FE auto-building tools like webpack or other stuff atm, I just want static HTML...
+									</p>
+									<a href="#" class="image main"><img src="images/github/3.png" alt="" /></a>
+									<p>
+										Alternatively, you can try setting up a github pages with <a href="https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll">Jekyll</a> 
+									</p>
+									<p>After make some modification on my files, then use git to push your into your `{yourGithubName}.github.io`</p>
+									<a href="#" class="image main"><img src="images/github/4.png" alt="" /></a>
+								
+									<li>Add code highlights</li>
+									<p>Well, this is a FE blog for sharing some thoughts and idea about techiniques right?</p>
+									<p>
+										So, we need to support code highlight. 
+										Then you can PrismJS, <a href="https://prismjs.com/">
+											https://prismjs.com/
+										</a>
+										Select your option for programming language supporting, then download the css file and js file.
+										<a href="#" class="image main"><img src="images/github/5.png" alt="" /></a>
+										Import css file and js file into your repo.
+										<a href="#" class="image main"><img src="images/github/6.png" alt="" /></a>
+										The syntax will be like this.
+										<a href="#" class="image main"><img src="images/github/7.png" alt="" /></a>
+									</p>
+									<li>Add code generator</li>
+								</ul>
 
+							</article>
 						<!-- Posts -->
 							<!-- <section class="posts">
 								<article>
