@@ -124,8 +124,68 @@
 										<a href="#" class="image main"><img src="images/github/7.png" alt="" /></a>
 									</p>
 									<li>Add code generator</li>
+									<p>After above was done, i was thinking about to create post pages using some CMD line.
+										Because we may frequently update our blog site with publishing the new blog post, or generate
+										some new pages. 
+										We can plopJS to do that.
+										<a href="https://plopjs.com/">https://plopjs.com/</a>
+									</p>
+									<p>I am not using package.json for this static website. Because I already installed plop in global level.
+										`npm i plop -g --save`.
+									</p>
+									<p>All i need to do is creating plopfile.js file for config the plop js cmd line</p>
+									<pre>
+										<code class="language-js">
+module.exports = function (plop) {
+	// controller generator
+	plop.setGenerator('post', {
+		description: 'page template `post` logic',
+		prompts: [
+			{
+				type: 'input',
+				name: 'name',
+				message: 'post file html name please'
+			},
+			{
+				type: 'input',
+				name: 'date',
+				message: 'date please (April 25, 2017)'
+			},
+			{
+				type: 'input',
+				name: 'title',
+				message: 'specify blog title'
+			},
+			{
+				type: 'input',
+				name: 'des',
+				message: 'des please'
+			},
+		],
+		actions: [{
+			type: 'add',
+			path: 'post/{{name}}.html',
+			templateFile: 'plop-templates/post.hbs'
+		}]
+	});
+};
+											
+											
+										</code>
+									</pre>
+									<p>
+										Also, you need to specify the page template with handlebars templates.
+										The {} is the variable where the value will be passed in through cd line.
+									</p>
+									<a href="#" class="image main"><img src="images/github/8.png" alt="" /></a>
+									<p>
+										So when next time, we can use cmd line to create pages 
+									</p>
 								</ul>
-
+								<p>
+									That's pretty much for my first blog post.
+									It is simple way to create this github page, hope you guys can enjoy.
+								</p>
 							</article>
 						<!-- Posts -->
 							<!-- <section class="posts">
